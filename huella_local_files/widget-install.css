@@ -1,0 +1,91 @@
+.gf-popup {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: rgba(21,21,21,0.93);
+  pointer-events: none;
+  opacity: 0;
+  transition-duration: 0.25s;
+  transition-property: opacity;
+}
+.gf-popup.active {
+  height: 100%;
+  pointer-events: auto;
+  opacity: 1 !important;
+}
+.gf-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transform: translateY(80px);
+  transition-delay: 0.125s;
+  transition-duration: 0.25s;
+  transition-property: opacity, transform;
+}
+.gf-popup.active .gf-iframe {
+  opacity: 1;
+  transform: none;
+}
+.gf-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.gf-close::after,
+.gf-close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 2px;
+  margin: -1px 0 0 -12px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+  transition-duration: 0.125s;
+  transition-property: background-color;
+}
+.gf-close::before {
+  transform: rotate(-45deg);
+}
+
+#wix-giveforms-embed-container div {
+  display: none!important;
+}
+
+#wix-giveforms-embed-container {
+  background: transparent;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .gf-close {
+    width: 36px;
+    height: 36px;
+  }
+  .gf-close::after,
+  .gf-close::before {
+    width: 16px;
+    height: 16x;
+    margin-left: -8px;
+    background-color: #939393;
+  }
+}
