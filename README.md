@@ -52,10 +52,8 @@ mistralai/Mistral-7B-Instruct-v0.1
 ### 🔗 Endpoint real del chatbot:
 
 ```
-https://<nombre-del-space>.hf.space/chat
+https://luisdsai-chatbot-huella-backend-v2.hf.space/chat
 ```
-
-*(Reemplazar `<nombre-del-space>` con el nombre real del Space activo)*
 
 ---
 
@@ -99,10 +97,29 @@ pydantic<2
 
 ## ✅ Cómo probarlo localmente
 
-1. Asegurarse de tener un entorno local (por ejemplo, abrir `huella_local.html` con Live Server o Visual Studio Code).
-2. El HTML llama al backend a través del script `chatbot.js`.
-3. El backend debe estar **activo en Hugging Face Spaces**.
-4. Si todo está bien configurado, el chat responderá normalmente al enviar mensajes.
+1. Cambiar el nombre del archivo ```.envprueba``` por el de ```.env``` y colocar en él la Key de HuggingFace
+2. Recomendamos, para evitar problemas de compatibilidad entre dependencias, utilizar este proyecto en un entorno virtual, para ello debemos crear y activar estos comandos:
+**En MacOs/Linux:**
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+**En Windows**:
+```
+python -m venv venv
+venv\Scripts\activate
+```
+* Una vez activado el entorno, instalar las dependencias del proyecto con:
+```
+pip install -r requirements.txt
+```
+<u>**Importante**</u>: Esto asegura que todas las librerías necesarias se instalen en versiones compatibles, tal como fueron definidas en el archivo requirements.txt, evitando conflictos con otras instalaciones globales de Python.
+
+
+2. Asegurarse de tener un entorno local (por ejemplo, abrir `huella_local.html` con Live Server o Visual Studio Code).
+3. El HTML llama al backend a través del script `chatbot.js`.
+4. El backend debe estar **activo en Hugging Face Spaces**.
+5. Si todo está bien configurado, el chat responderá normalmente al enviar mensajes.
 
 ---
 
@@ -119,22 +136,13 @@ pydantic<2
 
 ---
 
-## ✍️ Personalización
-
-- Cambiar el avatar: reemplazar la imagen en `/Imagenes-logos/icono/`.
-- Editar mensajes predefinidos: en `chatbot.js` (`setQuickQuestion(...)`).
-- Ajustar colores o animaciones: en `styles.css`.
-- Se puede conectar a otro modelo o API modificando `main.py`.
-
----
-
 ## 👤 Contacto del colaborador
 
 Este sistema fue actualizado e implementado por:
 
 **Luis Cerelli**  
 Colaborador voluntario  
-📧 [opcional]  
+📧 [Mail: luisalberto.cerelli@asociacionhuelladecarbono.org](luisalberto.cerelli@asociacionhuelladecarbono.org)  
 🔗 [GitHub: @LuisCerelli](https://github.com/LuisCerelli)
 
 ---
@@ -149,6 +157,8 @@ Colaborador voluntario
 
 ## 🧠 Futuras mejoras sugeridas
 
+- Mejora de las posibles alucinaciones mediante la provision de documentos de la Asociación (RAG)
+- Mejora del Front a evaluar con el equipo de diseño 
 - Soporte para historial de conversación
 - Traducción automática desde otros idiomas
 - Modo oscuro integrado al sistema
