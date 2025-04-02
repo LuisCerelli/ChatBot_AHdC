@@ -97,8 +97,14 @@ pydantic<2
 
 ## ✅ Cómo probarlo localmente
 
-1. Cambiar el nombre del archivo ```.envprueba``` por el de ```.env``` y colocar en él la Key de HuggingFace
-2. Recomendamos, para evitar problemas de compatibilidad entre dependencias, utilizar este proyecto en un entorno virtual, para ello debemos crear y activar estos comandos:
+1. Clonar este repositorio: 
+```
+git clone https://github.com/LuisCerelli/ChatBot_AHdC.git
+cd ChatBot_AHdC
+```
+
+2. Cambiar el nombre del archivo ```.envprueba``` por el de ```.env``` y colocar en él la Key de [HuggingFace](https://huggingface.co/LuisDSAI)
+3. Recomendamos, para evitar problemas de compatibilidad entre dependencias, utilizar este proyecto en un entorno virtual, para ello debemos crear y activar estos comandos:
 **En MacOs/Linux:**
 ```
 python3 -m venv venv
@@ -116,10 +122,10 @@ pip install -r requirements.txt
 <u>**Importante**</u>: Esto asegura que todas las librerías necesarias se instalen en versiones compatibles, tal como fueron definidas en el archivo requirements.txt, evitando conflictos con otras instalaciones globales de Python.
 
 
-2. Asegurarse de tener un entorno local (por ejemplo, abrir `huella_local.html` con Live Server o Visual Studio Code).
-3. El HTML llama al backend a través del script `chatbot.js`.
-4. El backend debe estar **activo en Hugging Face Spaces**.
-5. Si todo está bien configurado, el chat responderá normalmente al enviar mensajes.
+4. Asegurarse de tener un entorno local (por ejemplo, abrir `huella_local.html` con <u>Live Server</u> o <u>Visual Studio Code</u>).
+5. El HTML llama al backend a través del script `chatbot.js`.
+6. El backend debe estar **activo en Hugging Face Spaces**.
+7. Si todo está bien configurado, el chat responderá normalmente al enviar mensajes.
 
 ---
 
@@ -142,6 +148,8 @@ Este sistema fue actualizado e implementado por:
 
 **Luis Cerelli**  
 Colaborador voluntario  
+📩 *Para consultas técnicas o inconvenientes relacionados con la clave de [HuggingFace](https://huggingface.co/) o el acceso a la plataforma, no dudes en contactarme.*
+
 📧 [Mail: luisalberto.cerelli@asociacionhuelladecarbono.org](luisalberto.cerelli@asociacionhuelladecarbono.org)  
 🔗 [GitHub: @LuisCerelli](https://github.com/LuisCerelli)
 
