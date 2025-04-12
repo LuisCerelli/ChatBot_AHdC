@@ -1,6 +1,6 @@
 # 📄 — *Chatbot Huella de Carbono* 🌱🤖
 <p align="center">
-  <img scr="paginareal/chatbot/Imagenes-logos/Muestra_Chatbot_Real.gif" alt="Demo Chatbot" width="480"/>
+  <img src="chatbot/Imagenes-logos/Muestra_Chatbot_Real.gif" alt="Demo Chatbot" width="480"/>
 </p>
 
 ## 🧠 Chatbot Interactivo - Asociación Huella de Carbono 🌍
