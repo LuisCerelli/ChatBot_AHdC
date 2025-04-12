@@ -5,11 +5,6 @@
   </a>
 </p>
 
-<p align="center">
-  🔗 <a href="https://luiscerelli.github.io/ChatBot_AHdC/" target="_blank"><strong>Ver demo animada en pantalla completa</strong></a>
-</p>
-
-
 ## 🧠 Chatbot Interactivo - Asociación Huella de Carbono 🌍
 
 Este proyecto implementa un chatbot inteligente para la página web de la Asociación Huella de Carbono, diseñado para ofrecer respuestas automáticas en temas de sostenibilidad, huella de carbono y medio ambiente, usando inteligencia artificial.
